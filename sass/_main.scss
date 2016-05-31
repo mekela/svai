@@ -1,0 +1,163 @@
+// Normally mainpage styles
+ 
+ /*----------sidebar----------*/
+ .sidebar{
+ 	position: fixed;
+ 	height: 100vh;
+ 	left: 0;
+ 	top: 0;
+ 	width: 363px;
+ 	background:#fff;
+ 	z-index: 50;
+ }
+ 	.sidebar_inner{
+ 		position: relative;
+ 		padding: 39px 50px;
+ 		&:before{
+ 			content: '';
+ 			width: 8px;
+			height: 455px;
+			background-color: #1fc66a;
+			position: absolute;
+			top: 60px;
+			left: 0;
+ 		}
+ 	}
+ 		.logo{
+ 			display: block;
+ 			padding-bottom: 45px
+ 		}
+ 		.main_menu{
+ 			width: 208px;
+ 			margin-bottom: 28px;
+ 			border-bottom: 1px #d6d6d6 solid;
+ 			li{
+ 				display: block;
+ 				padding-bottom: 27px;
+ 				a{
+					font-size: 18px;
+					color: #818181;
+					text-decoration: none;
+					&:hover{
+						text-decoration: underline;
+					}
+ 				}
+ 			}
+ 		}
+ 		.sid_contacts{
+ 			strong{
+ 				display: block;
+ 				padding-bottom: 10px;
+ 				font-size: 20px;
+ 				color: #000000;
+ 				font-weight: normal;
+ 			}
+ 			.button{
+ 				width: 164px;
+ 				border-radius: 14px;
+ 				background: none;
+ 				border: 1px solid #818181;
+ 				font-size: 14px;
+ 				font-weight: normal;
+ 				text-transform: none;
+ 				color: #818181;
+ 				padding: 7px 0;
+ 				&:hover{
+ 					background:#818181;
+ 					color: #fff
+ 				}
+ 			}
+ 		}
+ /*----------end-sidebar----------*/
+
+ /*----------header----------*/
+
+ .header{
+	position: relative;
+	background:url(../img/top_bg.jpg) no-repeat left top;
+	min-height: 900px;
+	&:before{
+		content: url(../img/man_top2.png);
+		position: absolute;
+		left: -75px;
+  		top: 0px;
+  		z-index: 51;
+	}
+ }
+ 	.slogan{
+ 		padding: 72px 0 0 315px;
+ 		position: relative; 
+ 		width: 700px;
+ 		color: #fff;
+ 		h6{
+ 			text-transform: uppercase;
+ 			color: #fff;
+ 			font-size: 48px;
+ 			font-family: $fontfamily;
+ 		}
+ 		small{
+ 			position: absolute;
+ 			width: 426px;
+			font-size: 20px;
+			line-height: 25px;
+			top: 210px;
+    		right: 65px;
+ 		}
+ 	}
+	.main_form{
+		width: 544px;
+		height: 335px;
+		position: relative;
+		z-index: 52;
+		padding: 16px;
+		box-sizing: border-box;
+		margin: 80px 0 0 400px;
+		border: 4px solid #fff;
+		h6{
+			font-size: 20px;
+			color: #fff;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			strong{
+				color: #20c66a;
+				font-weight: normal;
+			}
+		}
+		small{
+			font-size: 13px;
+			color: #fff;
+			display: block;
+			line-height: 16px;
+		}
+		form{
+			div{
+				padding-bottom: 20px;
+			}
+			.button{
+				display: block;
+				width: 100%;
+			}
+			input{
+				width: 100%;
+			}
+		}
+	}
+/*----------end-header----------*/	
+
+
+/*----------main----------*/
+ 
+ .main{
+	@include povh('');
+ }
+
+/*----------end main----------*/	
+
+	
+/*----------footer----------*/
+ 
+ .footer{
+	@include povh('');
+ }
+
+/*----------end footer----------*/
