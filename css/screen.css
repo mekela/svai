@@ -97,7 +97,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 .wrapper { position: relative; overflow: hidden; width: auto; min-height: 100vh; padding: 0 0 0 363px; }
 
-.container { width: 1000px; margin: 0 auto; position: relative; overflow: hidden; }
+.container { width: 1100px; margin: 0 0 0 63px; position: relative; overflow: hidden; }
 
 /*----------sidebar----------*/
 .sidebar { position: fixed; height: 100vh; left: 0; top: 0; width: 363px; background: #fff; z-index: 50; }
@@ -124,7 +124,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 /*----------end-sidebar----------*/
 /*----------header----------*/
-.header { position: relative; background: url(../img/top_bg.jpg) no-repeat left top; min-height: 900px; }
+.header { position: relative; background: url(../img/top_bg.jpg) no-repeat left top; min-height: 898px; }
 
 .header:before { content: url(../img/man_top2.png); position: absolute; left: -75px; top: 0px; z-index: 51; }
 
@@ -151,6 +151,42 @@ textarea { height: 90px; padding-top: 5px; }
 /*----------end-header----------*/
 /*----------main----------*/
 .main { position: relative; overflow: hidden; }
+
+.different_wrap { background: url(../img/screen_bg2.jpg) no-repeat top left; }
+
+.different_tags { padding: 190px 0 0px 0; font-size: 0; vertical-align: top; }
+
+.different_tag { color: #fff; font-size: 14px; display: inline-block; vertical-align: top; width: 230px; height: 315px; background: #20c66a; font-size: 15px; text-align: center; padding: 0 15px; box-sizing: border-box; }
+
+.different_tag figure { padding: 13px 0 0 0; }
+
+.different_tag figure figcaption { font-size: 17px; padding: 21px 0 15px 0; text-transform: uppercase; }
+
+.different_tag:nth-child(2) { background: #1eb05f; }
+
+.different_tag:nth-child(3) { background: #1aa659; }
+
+.different_tag:nth-child(4) { background: #169950; }
+
+.different_tag:nth-child(5) { background: #118545; }
+
+.title { padding: 50px 0 35px 66px; font-size: 48px; color: #f3f3f3; text-transform: uppercase; font-family: "Museo"; }
+
+.different_text { position: relative; overflow: hidden; padding-left: 66px; }
+
+.different_text section { width: 400px; float: left; padding: 0 125px 70px 0; }
+
+.different_text section p { padding: 18px 0 0 0; }
+
+.price_wrap { height: 800px; background: url(../img/screen_bg3.jpg) no-repeat left top; }
+
+.price_table { margin-top: 90px; color: #fff; }
+
+.price_table table { width: 100%; border-collapse: separate; border-spacing: 0px 6px; }
+
+.price_table table th { font-size: 16px; padding: 17px; text-align: left; background: rgba(32, 198, 106, 0.8); }
+
+.price_table table td { font-size: 16px; padding: 17px; background: rgba(49, 49, 49, 0.8); margin-bottom: 10px; }
 
 /*----------end main----------*/
 /*----------footer----------*/
