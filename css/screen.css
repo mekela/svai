@@ -140,6 +140,8 @@ textarea { height: 90px; padding-top: 5px; }
 
 .main_form h6 strong { color: #20c66a; font-weight: normal; }
 
+.main_form h4 { font-size: 36px; text-transform: uppercase; font-family: "Museo"; margin-bottom: 5px; color: #fff; }
+
 .main_form h5 { color: #fff; font-size: 20px; text-transform: uppercase; padding-bottom: 23px; }
 
 .main_form small { font-size: 13px; color: #fff; display: block; line-height: 16px; }
@@ -251,6 +253,38 @@ textarea { height: 90px; padding-top: 5px; }
 .how_work section { padding: 23px 17px; position: absolute; top: 100%; left: 0; opacity: 0; width: 100%; z-index: 2; background: #20c66a; box-sizing: border-box; height: 100%; font-size: 17px; line-height: 22px; -webkit-transition: all 0.5s; transition: all 0.5s; }
 
 .how_work section h6 { font-size: 24px; font-weight: 600; padding: 0 0 17px 0; text-transform: uppercase; }
+
+.repair_wrap, .portfolio_wrap { background: #dee7ed; padding-bottom: 55px; position: relative; overflow: hidden; }
+
+.repair_wrap .title, .portfolio_wrap .title { color: #000; }
+
+.attention { width: 900px; margin: 0 auto; box-sizing: border-box; padding: 16px; font-size: 20px; position: relative; overflow: hidden; color: #000; margin-top: 35px; border: 4px solid #20c66a; }
+
+.repair_block { width: 900px; margin: 0 auto; position: relative; overflow: hidden; counter-reset: list1; }
+
+.repair_block figure { width: 300px; float: left; position: relative; overflow: hidden; overflow: visible; height: 510px; }
+
+.repair_block figure:before { counter-increment: list1; content: counter(list1); width: 46px; height: 46px; background-color: #1fc569; line-height: 46px; position: absolute; text-align: center; line-height: 46px; font-size: 30px; color: #fff; font-weight: 600; top: 0; right: 0; }
+
+.repair_block figure:after { content: url(../img/arrow.png); position: absolute; top: 105px; right: -31px; z-index: 2; }
+
+.repair_block figure:nth-child(3n):after { display: none; }
+
+.repair_block figure figcaption { padding: 12px; font-size: 16px; color: #585858; }
+
+.repair_block figure figcaption strong { display: block; padding-bottom: 10px; font-size: 18px; color: #000; text-transform: uppercase; }
+
+.center_form { height: 550px; position: relative; overflow: hidden; background: url(../img/form_bg.jpg) no-repeat top left; }
+
+.center_form .main_form { margin: 50px 0 0 60px; float: left; height: auto; }
+
+.portfolio_block section { position: relative; overflow: hidden; clear: both; }
+
+.portfolio_block figure { float: left; position: relative; overflow: hidden; }
+
+.portfolio_block figure img { display: block; }
+
+.portfolio_block figure figcaption { position: absolute; font-size: 24px; color: #fff; text-transform: uppercase; left: 20px; bottom: 20px; }
 
 /*----------end main----------*/
 /*----------footer----------*/
