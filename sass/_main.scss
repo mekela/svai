@@ -123,6 +123,13 @@
 				font-weight: normal;
 			}
 		}
+		h5{
+			color: #fff;
+			font-size: 20px;
+			text-transform: uppercase;
+			padding-bottom: 23px;
+
+		}
 		small{
 			font-size: 13px;
 			color: #fff;
@@ -233,6 +240,58 @@
 					padding: 17px;
 					background: rgba(49,49,49, .8);
 					margin-bottom: 10px ;
+				}
+			}
+		}
+
+	.order_wrap{
+		background: url(../img/man2_transparent.png) no-repeat left top, url(../img/man2_bg.jpg) no-repeat left top;
+		height: 550px;
+		@include povh('');
+		.main_form{
+			margin:53px 0 0 70px;
+			border: none;
+			padding: 37px 0 0 37px;
+			h6{
+				font-size: 36px;
+				text-transform: uppercase;
+				font-family: $fontfamily;
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	.preference_wrap{
+		.title{
+			color: #000;
+		}
+		height: 915px;
+		background:#dee7ed url(../img/pref_img.jpg) no-repeat left bottom;
+	}
+		.preference_block{
+			figure{
+				float: left;
+				width: 260px;
+				text-align: center;
+				padding: 0 130px 30px 0;
+				height: 310px;
+				&:nth-child(3), &:last-child{
+					padding-right: 0;
+				}
+				&:nth-child(4){
+					margin-left: 390px;
+				}
+				font-size: 16px;
+				color: #585858;
+				strong{
+					display: block;
+					padding: 10px 0 7px 0;
+					color: #000;
+					text-transform: uppercase;
+					font-weight: 600;
+				}
+				em{
+					font-style: normal;
 				}
 			}
 		}
