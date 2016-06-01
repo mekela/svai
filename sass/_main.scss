@@ -295,6 +295,131 @@
 				}
 			}
 		}
+
+	.compare_wrap{
+		height: 800px;
+		font-size: 16px;
+		color: #fff;
+		background: #1b9250 url(../img/compare_line.jpg) repeat-y left top;
+		h4{
+			font-size: 18px;
+			height: 95px;
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+		li{
+			position: relative;
+			padding: 0 50px 24px 24px;
+			line-height: 22px;
+			&:before{
+				content: '';
+				border-radius: 50%;
+				width: 9px;
+				height: 9px;
+				background:#e30613;
+				position: absolute;
+				left: 0;
+				top: 6px;
+
+			}
+		}
+	}
+		.compare_wrap .container > div{
+			float: left;
+			width: 510px;
+			padding: 15px;
+			box-sizing: border-box;
+			background:url(../img/minus.png) no-repeat left top;
+			&.compare_right{
+				padding-left: 30px;
+				background:url(../img/plus.png) no-repeat 13px top;
+			}
+		}
+		.compare_right{
+			li{
+				line-height: 28px;
+				font-size: 20px;
+				&:before{
+					background:#fff;
+				}
+			}
+		}
+
+	.how_work_wrap{
+		height: 800px;
+		background:url(../img/screen_bg7.jpg) no-repeat top left;
+	}
+		.how_work{
+			@include povh('');
+			float: left;
+			width: 389px;
+			height: 518px;
+			color: #fff;
+			cursor: pointer;
+			background:#20c66a;
+			&:nth-child(2){
+				background:#1eb05f;
+				section{
+					background:#1eb05f;
+				}
+			}
+			&:nth-child(3){
+				background:#1aa659;
+				section{
+					background:#1aa659;
+				}
+			}
+			&:hover{
+				section{
+					top: 0;
+					opacity: 1;
+				}
+			}
+			img{
+				display: block;
+			}
+			figure{
+				@include povh('');
+				width: 390px;
+				height: 518px;
+				figcaption{
+					height: 100px;
+					span{
+						height: 100px;
+						width: 390px;
+						vertical-align: middle;
+						display: table-cell;
+						box-sizing: border-box;
+						font-size: 24px;
+						font-weight: 600;
+						padding: 0 18px;
+						text-transform: uppercase;
+					}
+				}
+			}
+			section{
+				padding: 23px 17px;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				opacity: 0;
+				width: 100%;
+				z-index: 2;
+				background:#20c66a;
+				box-sizing: border-box;
+				height: 100%;
+				font-size: 17px;
+				line-height: 22px;
+				@include transition(all 0.5s);
+				h6{
+					font-size: 24px;
+					font-weight: 600;
+					padding: 0 0 17px 0;
+					text-transform: uppercase;
+				}
+			}
+		}
 /*----------end main----------*/	
 
 	

@@ -175,6 +175,7 @@ $breaklarge: 1180px;
   -ms-transition: $what;
   transition: $what;
 }
+//@include transition(background-color 1s .5s, color 2s);
 
 @mixin tr($what) {
   @include transition($what);
