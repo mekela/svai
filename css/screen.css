@@ -158,6 +158,8 @@ textarea { height: 90px; padding-top: 5px; }
 /*----------main----------*/
 .main { position: relative; overflow: hidden; }
 
+.main > div { position: relative; }
+
 .different_wrap { background: url(../img/screen_bg2.jpg) no-repeat top left; }
 
 .different_tags { padding: 190px 0 0px 0; font-size: 0; vertical-align: top; }
@@ -421,3 +423,11 @@ textarea { height: 90px; padding-top: 5px; }
 .form_item { padding-bottom: 25px; }
 
 /*----------end modal----------*/
+/*---------fixed-nav-----------*/
+.fixed_nav { position: absolute; top: 45%; right: 0; width: 42px; z-index: 60; }
+
+.fixed_nav a { display: block; height: 35px; line-height: 35px; opacity: 0.4; background: #20c66a; font-size: 20px; color: #fff; text-align: center; line-height: 35px; text-decoration: none; }
+
+.fixed_nav a.active, .fixed_nav a:hover { opacity: 1; }
+
+/*--------end-fixed-nav--------*/
