@@ -360,6 +360,28 @@ textarea { height: 90px; padding-top: 5px; }
 
 .reviews_slider_txt h6 strong { font-weight: normal; position: relative; display: block; -webkit-transform: skewX(20deg); -ms-transform: skewX(20deg); transform: skewX(20deg); }
 
+.contacts_wrap { height: 650px; position: relative; overflow: hidden; }
+
+.map { height: 650px; position: relative; overflow: hidden; }
+
+.contacts_block { position: absolute; left: 0; top: 0; height: 100%; box-sizing: border-box; width: 335px; z-index: 40; color: #fff; padding: 16px 20px; background: rgba(30, 85, 54, 0.85); }
+
+.contacts_block .title { margin: 0; padding: 114px 0 22px 0; font-size: 35px; background: url(../img/Pin.png) no-repeat top left; }
+
+.contacts_block section { padding-bottom: 30px; font-size: 16px; line-height: 25px; }
+
+.contacts_block section strong { display: block; }
+
+.contacts_block section p { padding-bottom: 19px; }
+
+.contacts_block h5 { font-size: 24px; font-weight: bold; padding-bottom: 10px; }
+
+.contacts_block h6 { padding-bottom: 8px; font-size: 17px; font-weight: normal; }
+
+.contacts_block .button { color: #1b9250; background: #fff; display: block; }
+
+.contacts_block .button:hover { color: #fff; background: #2c9c5e; }
+
 /*----------end main----------*/
 /*----------footer----------*/
 .footer { position: relative; overflow: hidden; }

@@ -732,6 +732,63 @@
 					}
 				}
 			}
+
+	.contacts_wrap{
+		height: 650px;
+		@include povh('');
+	}
+		.map{
+			height: 650px;
+			@include povh('');
+		}
+		.contacts_block{
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			box-sizing: border-box;
+			width: 335px;
+			z-index: 40;
+			color: #fff;
+			padding: 16px 20px;
+			background:rgba(30,85, 54, 0.85);
+			.title{
+				margin: 0;
+				padding: 114px 0 22px  0;
+				font-size: 35px;
+				background:url(../img/Pin.png) no-repeat top left;
+			}
+			section{
+				padding-bottom: 30px;
+				font-size: 16px;
+				line-height: 25px;
+				strong{
+					display: block;
+				}
+				p{
+					padding-bottom: 19px;
+				}
+			}
+			h5{
+				font-size: 24px;
+				font-weight: bold;
+				padding-bottom: 10px;
+			}
+			h6{
+				padding-bottom: 8px;
+				font-size: 17px;
+				font-weight: normal;
+			}
+			.button{
+				color: #1b9250;
+				background:#fff;
+				display: block;
+				&:hover{
+					color: #fff;
+					 @include button_gradient_hover('');
+				}
+			}
+		}
 /*----------end main----------*/	
 
 	
