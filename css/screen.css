@@ -336,6 +336,30 @@ textarea { height: 90px; padding-top: 5px; }
 
 .numbers_wrap .container dl:nth-child(6) dt { color: #1b9250; padding-bottom: 99px; }
 
+.reviews_wrap { background: #1b9250; }
+
+.reviews_slider { padding: 50px 0 150px 0; }
+
+.reviews_slider .bx-pager { display: none; }
+
+.reviews_slider .bx-prev, .reviews_slider .bx-next { width: 33px; height: 40px; display: inline-block; background: url(../img/slide_arrow.png) no-repeat; font: 0 / 0 a; text-shadow: none; color: transparent; opacity: 0.3; margin: 0 5px; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.reviews_slider .bx-prev:hover, .reviews_slider .bx-next:hover { opacity: 1; }
+
+.reviews_slider .bx-prev.bx-prev, .reviews_slider .bx-next.bx-prev { -webkit-transform: scale(-1, 1); -ms-transform: scale(-1, 1); transform: scale(-1, 1); -webkit-filter: FlipH; filter: FlipH; -ms-filter: "FlipH"; }
+
+.reviews_slider .bx-controls-direction { z-index: 60; position: absolute; left: 231px; bottom: 128px; }
+
+.reviews_slider_inner { width: 860px; margin: 0 auto; }
+
+.reviews_slider_img { width: 230px; float: left; padding: 15px 0 0 0; position: relative; overflow: hidden; }
+
+.reviews_slider_txt { position: relative; overflow: hidden; line-height: 25px; font-size: 17px; color: #fff; }
+
+.reviews_slider_txt h6 { height: 45px; width: 230px; background: #fff; color: #1b9250; font-size: 20px; text-align: center; line-height: 45px; margin-bottom: 15px; text-transform: uppercase; -webkit-transform: skewX(-20deg); -ms-transform: skewX(-20deg); transform: skewX(-20deg); margin-left: 10px; }
+
+.reviews_slider_txt h6 strong { font-weight: normal; position: relative; display: block; -webkit-transform: skewX(20deg); -ms-transform: skewX(20deg); transform: skewX(20deg); }
+
 /*----------end main----------*/
 /*----------footer----------*/
 .footer { position: relative; overflow: hidden; }
