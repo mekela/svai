@@ -33,23 +33,23 @@
 		<a href="/" class="logo"><img src="img/logo.png" alt=""></a>
 		<nav class="main_menu">
 			<ul>
-				<li><a href="#">О компании</a></li>
-				<li><a href="#">Наши цены</a></li>
-				<li><a href="#">Как мы монтируем</a></li>
-				<li><a href="#">Портфолио</a></li>
-				<li><a href="#">Порядок работы</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a href="#about">О компании</a></li>
+				<li><a href="#price">Наши цены</a></li>
+				<li><a href="#how">Как мы монтируем</a></li>
+				<li><a href="#portfolio">Портфолио</a></li>
+				<li><a href="#work">Порядок работы</a></li>
+				<li><a href="#contacts">Контакты</a></li>
 			</ul>
 		</nav>
 		<div class="sid_contacts">
 			<strong>+7 (495) 720-33-87</strong>
-			<a href="#" class="button">Заказать звонок</a>
+			<a  href="#modal" class="button fancybox">Заказать звонок</a>
 		</div>
 	</div>
 </aside>
 <!--end-fixed-->
 
-<div class="wrapper">
+<div class="wrapper" id="wrapper">
 <!--header-->
 <header class="header">
 	<div class="slogan">
@@ -72,7 +72,7 @@
 <!--main-->
 <div class="main">
 
-	<div class="different_wrap">
+	<div class="different_wrap" id="about">
 		<div class="different_tags">
 			<div class="different_tag">
 				<figure>
@@ -170,7 +170,7 @@
 		</div>
 	</div>
 
-	<div class="price_wrap">
+	<div class="price_wrap" id="price">
 		<div class="title">нАШИ ЦЕНЫ</div>
 		<div class="price_table container">
 			<table  cellpadding="7" border="2">
@@ -318,7 +318,7 @@
 		</div>
 	</div>
 
-	<div class="how_work_wrap">
+	<div class="how_work_wrap" id="how">
 		<div class="title">Как мы монтируем?</div>
 		<div class="how_work_block">
 			<div class="how_work">
@@ -477,37 +477,47 @@
 		</div>
 	</div>
 
-	<div class="portfolio_wrap">
+	<div class="portfolio_wrap"  id="portfolio">
 		<div class="title">Наше портфолио</div>
 		<div class="portfolio_block container">
 			<section>
 				<figure>
-					<img src="img/portfolio1.jpg" alt="">
-					<figcaption>Брусовые и щитоВые дома</figcaption>
+					<a href="img/portfolio1.jpg" class="fancybox-gallery" data-fancybox-group="group" title="Брусовые и щитоВые дома">
+						<img src="img/portfolio1.jpg" alt="">
+						<figcaption>Брусовые и щитоВые дома</figcaption>
+					</a>
 				</figure>
 				<figure>
-					<img src="img/portfolio2.jpg" alt="">
-					<figcaption>заборы</figcaption>
+					<a href="img/portfolio1.jpg" class="fancybox-gallery" data-fancybox-group="group" title="Брусовые и щитоВые дома">
+						<img src="img/portfolio2.jpg" alt="">
+						<figcaption>заборы</figcaption>
+					</a>
 				</figure>
 				<figure>
-					<img src="img/portfolio3.jpg" alt="">
-					<figcaption>беседки</figcaption>
+					<a href="img/portfolio1.jpg" class="fancybox-gallery" data-fancybox-group="group" title="Брусовые и щитоВые дома">
+						<img src="img/portfolio3.jpg" alt="">
+						<figcaption>беседки</figcaption>
+					</a>
 				</figure>
 			</section>
 			<section>
 				<figure>
-					<img src="img/portfolio4.jpg" alt="">
-					<figcaption>Дома из оцилиндрованного бревна, пенобетонных блоков</figcaption>
+					<a href="img/portfolio1.jpg" class="fancybox-gallery" data-fancybox-group="group" title="Дома из оцилиндрованного бревна, пенобетонных блоков">
+						<img src="img/portfolio4.jpg" alt="">
+						<figcaption>Дома из оцилиндрованного бревна, пенобетонных блоков</figcaption>
+					</a>
 				</figure>
 				<figure>
-					<img src="img/portfolio5.jpg" alt="">
-					<figcaption>Террасы</figcaption>
+					<a href="img/portfolio1.jpg" class="fancybox-gallery" data-fancybox-group="group" title="Брусовые и щитоВые дома">
+						<img src="img/portfolio5.jpg" alt="">
+						<figcaption>Террасы</figcaption>
+					</a>	
 				</figure>
 			</section>
 		</div>
 	</div>	
 	
-	<div class="work_wrap">
+	<div class="work_wrap" id="work">
 		<div class="title">Порядок работы</div>
 		<div class="container">
 			<figure>
@@ -630,7 +640,7 @@
 		</div>
 	</div>
 
-	<div class="contacts_wrap">
+	<div class="contacts_wrap" id="contacts">
 		<div class="contacts_block">
 			<div class="title">Где мы находимся?</div>
 			<section>
@@ -644,7 +654,7 @@
 			<article>
 				<h5>Остались вопросы?</h5>
 				<h6>Задайте их специалисту и получите моментальный ответ</h6>
-				<a href="#modal" class="button fancybox">задать вопрос</a>
+				<a href="#modal2" class="button fancybox">задать вопрос</a>
 			</article>
 		</div>
 		<div class="map">
@@ -654,11 +664,91 @@
 
 </div>
 <!--end-main-->
+</div>
+
 <!--footer-->
 <footer class="footer">
-	
+	<div class="footer_inner">
+		<address>© ЗИЛ Сваи. 2016  |  Все права защищены</address>
+		<div class="develop">
+			Сделано в 
+			<a href="#">Grey Fox</a>
+		</div>
+		<a href="#wrapper" class="arrow_top"><img src="img/arrow_top.png" alt=""></a>
+	</div>
 </footer>
 <!--end-footer-->
+
+<!--modals-->
+<div class="modal" id="modal">
+	<input type="button" onclick="$.fancybox.close()" class="close_modal" />
+	<div class="modal_inner">
+		<div class="title">заказать звонок</div>
+		<section>
+			<form action="#">
+				<div class="form_item">
+					<input type="text" placeholder="Ваше имя">
+				</div>	
+				<div class="form_item">
+					<input type="tel" placeholder="Ваш телефон">
+				</div>
+				<div class="form_item">
+					<input type="submit" href="#thanks1" class="button fancybox" value="перезвоните мне">
+				</div>
+				
+			</form>
+		</section>
+	</div>
 </div>
+<div class="modal" id="modal2">
+	<input type="button" onclick="$.fancybox.close()" class="close_modal" />
+	<div class="modal_inner">
+		<div class="title">задайте вопрос <br>специалисту</div>
+		<section>
+			<form action="#">
+				<div class="form_item">
+					<input type="text" placeholder="Ваше имя">
+				</div>	
+				<div class="form_item">
+					<input type="tel" placeholder="Ваш телефон">
+				</div>
+				<div class="form_item">
+					<input type="text" placeholder="Ваш вопрос">
+				</div>	
+				<div class="form_item">
+					<input type="submit" href="#thanks2" class="button fancybox" value="получить ответ">
+				</div>
+				
+			</form>
+		</section>
+	</div>
+</div>
+
+<div class="modal" id="thanks1">
+	<input type="button" onclick="$.fancybox.close()" class="close_modal" />
+	<div class="modal_inner">
+		<div class="title">спасибо за заявку!</div>
+		<section>
+			<p>Спасибо за интерес, проявленный к нашей компании!
+			Наш консультант свяжется с Вами в ближайшее время
+			для уточнения подробностей</p>
+		</section>
+	</div>
+</div>
+<div class="modal" id="thanks2">
+	<input type="button" onclick="$.fancybox.close()" class="close_modal" />
+	<div class="modal_inner">
+		<div class="title">спасибо за обращение!</div>
+		<section>
+			<p>Ваш вопрос принят и будет рассмотрен нашим 
+			специалистом в самое ближайшее время.
+			<br><br>
+			Мы свяжемся с Вами!
+			</p>
+		</section>
+	</div>
+</div>
+<!--end-modals-->
+
 </body>
 </html>
