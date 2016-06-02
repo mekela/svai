@@ -112,9 +112,11 @@ textarea { height: 90px; padding-top: 5px; }
 
 .main_menu li { display: block; padding-bottom: 27px; }
 
-.main_menu li a { font-size: 18px; color: #818181; text-decoration: none; }
+.main_menu li a { font-size: 18px; color: #818181; position: relative; text-decoration: none; }
 
-.main_menu li a:hover { text-decoration: underline; }
+.main_menu li a:hover, .main_menu li a.active { font-weight: bold; color: #000; }
+
+.main_menu li a:hover:before, .main_menu li a.active:before { position: absolute; left: -10px; content: ''; top: 4px; width: 4px; height: 15px; background: #1fc66a; }
 
 .sid_contacts strong { display: block; padding-bottom: 10px; font-size: 20px; color: #000000; font-weight: normal; }
 

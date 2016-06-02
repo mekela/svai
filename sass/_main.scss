@@ -37,9 +37,21 @@
  				a{
 					font-size: 18px;
 					color: #818181;
+					position: relative;
 					text-decoration: none;
-					&:hover{
-						text-decoration: underline;
+					&:hover, 
+					&.active{
+						font-weight: bold;
+						color: #000;
+						&:before{
+							position: absolute;
+							left: -10px;
+							content: '';
+							top: 4px;
+							width: 4px ;
+							height: 15px;
+							background:#1fc66a;
+						}
 					}
  				}
  			}
