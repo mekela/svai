@@ -144,6 +144,8 @@ textarea { height: 90px; padding-top: 5px; }
 
 .main_form h5 { color: #fff; font-size: 20px; text-transform: uppercase; padding-bottom: 23px; }
 
+.main_form h5 strong { color: #20c66a; }
+
 .main_form small { font-size: 13px; color: #fff; display: block; line-height: 16px; }
 
 .main_form form div { padding-bottom: 20px; }
@@ -254,9 +256,9 @@ textarea { height: 90px; padding-top: 5px; }
 
 .how_work section h6 { font-size: 24px; font-weight: 600; padding: 0 0 17px 0; text-transform: uppercase; }
 
-.repair_wrap, .portfolio_wrap { background: #dee7ed; padding-bottom: 55px; position: relative; overflow: hidden; }
+.repair_wrap, .portfolio_wrap, .numbers_wrap { background: #dee7ed; padding-bottom: 55px; position: relative; overflow: hidden; }
 
-.repair_wrap .title, .portfolio_wrap .title { color: #000; }
+.repair_wrap .title, .portfolio_wrap .title, .numbers_wrap .title { color: #000; }
 
 .attention { width: 900px; margin: 0 auto; box-sizing: border-box; padding: 16px; font-size: 20px; position: relative; overflow: hidden; color: #000; margin-top: 35px; border: 4px solid #20c66a; }
 
@@ -285,6 +287,54 @@ textarea { height: 90px; padding-top: 5px; }
 .portfolio_block figure img { display: block; }
 
 .portfolio_block figure figcaption { position: absolute; font-size: 24px; color: #fff; text-transform: uppercase; left: 20px; bottom: 20px; }
+
+.work_wrap { background: #1b9250; color: #fff; }
+
+.work_wrap .container { counter-reset: list2; }
+
+.work_wrap .container:before, .work_wrap .container:after { content: ''; width: 22px; height: 22px; position: absolute; background: #fff; border-radius: 50%; top: 0; right: 0; }
+
+.work_wrap .container:before { top: 74px; }
+
+.work_wrap .container:after { top: 395px; right: 754px; }
+
+.work_wrap figure { float: left; width: 265px; margin: 0 130px 0 0; position: relative; overflow: hidden; overflow: visible; height: 321px; text-align: center; }
+
+.work_wrap figure:nth-child(3) { margin-right: 0; }
+
+.work_wrap figure:nth-child(4) { margin-left: 395px; }
+
+.work_wrap figure:nth-child(4):after { right: 217px; width: 110px; }
+
+.work_wrap figure:nth-child(5) { margin-right: 0; }
+
+.work_wrap figure:nth-child(5):after { right: 217px; }
+
+.work_wrap figure:before { counter-increment: list2; content: "0" counter(list2); position: absolute; top: -5px; left: 50px; font-size: 20px; font-weight: 500; }
+
+.work_wrap figure:after { content: ''; width: 226px; height: 1px; border-top: 3px dotted #fff; position: absolute; top: 26%; right: -178px; }
+
+.work_wrap figure figcaption { font-size: 18px; padding: 13px 0 0 0; }
+
+.numbers_wrap .container { margin-top: 80px; height: 640px; background: url(../img/graph.png) no-repeat center 10px; }
+
+.numbers_wrap .container dl { font-size: 17px; color: #000; width: 300px; text-align: center; line-height: 25px; position: absolute; top: 0; left: 0; }
+
+.numbers_wrap .container dl dt { text-transform: uppercase; font-size: 48px; font-family: "Museo"; line-height: 1.1; padding-bottom: 15px; }
+
+.numbers_wrap .container dl:nth-child(1) { top: 0px; left: 70px; }
+
+.numbers_wrap .container dl:nth-child(2) { top: 291px; left: 75px; }
+
+.numbers_wrap .container dl:nth-child(3) { top: 477px; left: 407px; }
+
+.numbers_wrap .container dl:nth-child(4) { top: 291px; left: 706px; }
+
+.numbers_wrap .container dl:nth-child(5) { top: 5px; left: 708px; }
+
+.numbers_wrap .container dl:nth-child(6) { top: 142px; left: 407px; }
+
+.numbers_wrap .container dl:nth-child(6) dt { color: #1b9250; padding-bottom: 99px; }
 
 /*----------end main----------*/
 /*----------footer----------*/

@@ -135,6 +135,9 @@
 			font-size: 20px;
 			text-transform: uppercase;
 			padding-bottom: 23px;
+			strong{
+			color: #20c66a;
+			}
 
 		}
 		small{
@@ -512,7 +515,7 @@
 		}
 	}
 
-	.portfolio_wrap{
+	.portfolio_wrap, .numbers_wrap{
 		@extend .repair_wrap;
 	}
 		.portfolio_block{
@@ -536,6 +539,132 @@
 				}
 			}
 		}
+
+	.work_wrap{
+		background:#1b9250;
+		color: #fff;
+		.container{
+			counter-reset: list2;
+			&:before, &:after{
+				content: '';
+				width: 22px;
+				height: 22px;
+				position: absolute;
+				background:#fff;
+				border-radius: 50%;
+				top: 0;
+				right: 0;
+			}
+			&:before{
+				top: 74px;
+			}
+			&:after{
+				top: 395px;
+    			right: 754px;
+			}
+		}
+		figure{
+			float: left;
+			width: 265px;
+			margin: 0 130px 0 0;
+			@include povh('');
+			overflow: visible;
+			height: 321px;
+			text-align: center;
+			&:nth-child(3){
+				margin-right: 0;
+			}
+			&:nth-child(4){
+				margin-left: 395px;
+				&:after{
+	    			right: 217px;
+	    			width: 110px;
+				}
+			}
+			&:nth-child(5){
+				margin-right: 0;
+				&:after{
+	    			right: 217px;
+				}
+			}
+			&:before{
+				counter-increment: list2; 
+   				content: '0' counter(list2) ;
+   				position: absolute;
+   				top: -5px;
+   				left: 50px;
+   				font-size: 20px;
+   				font-weight: 500;
+			}
+			&:after{
+				content: '';
+				width: 226px;
+				height: 1px;
+				border-top: 3px dotted #fff;
+				position: absolute;
+				top: 26%;
+    			right: -178px;
+			}
+			figcaption{
+				font-size: 18px;
+				padding: 13px 0 0 0;
+			}
+		}
+	}
+
+	.numbers_wrap{
+		.container{
+			margin-top: 80px;
+			height: 640px;
+			background:url(../img/graph.png) no-repeat center 10px;
+			
+			dl{
+				font-size: 17px;
+				color: #000;
+				width: 300px;
+				text-align: center;
+				line-height: 25px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				dt{
+					text-transform: uppercase;
+					font-size: 48px;
+					font-family: $fontfamily;
+					line-height: 1.1;
+					padding-bottom: 15px;
+				}
+				&:nth-child(1){
+					top: 0px;
+					left: 70px;
+				}
+				&:nth-child(2){
+					top: 291px;
+    				left: 75px;
+				}
+				&:nth-child(3){
+					top: 477px;
+   				 	left: 407px;
+				}
+				&:nth-child(4){
+					top: 291px;
+    				left: 706px;
+				}
+				&:nth-child(5){
+					top: 5px;
+    				left: 708px;
+				}
+				&:nth-child(6){
+					 top: 142px;
+   					 left: 407px;
+   					 dt{
+   					 	color: #1b9250;
+   					 	padding-bottom: 99px;
+   					 }
+				}
+			}
+		}
+	}
 /*----------end main----------*/	
 
 	
