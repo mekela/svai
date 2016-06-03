@@ -1,8 +1,92 @@
 // Normally mainpage media styles
 // You can read about usage in https://github.com/paranoida/sass-mediaqueries 
 
+/*--------------mobile-devices------------------------*/
 
 //styles for custom device width
-@include mq($max-width: 1000px) {
-  
+@include mq($max-width: 1550px) {
+  	.container{
+  		width: 900px;
+  	}
+  	.wrapper{
+  		padding-left: 300px;
+  	}
+  	.sidebar{
+  		width: 300px;
+  	}
+  	.different_tag{
+  		width: 19.5%;
+  	}
+  	.different_text section{
+  		box-sizing: border-box;
+  		width: 50%;
+  		img{
+  			width: 100%;
+  		}
+  	}
+  	.preference_block figure{
+  		width: 33%;
+  		padding-left: 0;
+  		padding-right: 0;
+  	}
+
+  		.preference_block figure:nth-child(4) {
+		    margin-left: 33%;
+		}
+	.compare_wrap .container > div{
+		width: 50%;
+	}
+	.compare_wrap{
+		background-size: 50% auto;
+		height: auto;
+		.container{
+			width: 100%;
+		}
+	}
+	.how_work{
+		width: 33%;
+	}
+	.portfolio_block figure{
+		width: 50%;
+		
+	}
+	.portfolio_block section{
+		&:first-child{
+			figure{
+				width: 300px;
+			}
+			figure:first-child{
+				width:600px;
+			}
+		}	
+	}
+
+	.work_wrap figure, .work_wrap figure:nth-child(4){
+		width: 33%;
+		margin: 0;
+	}
+		 .work_wrap figure:nth-child(4){
+		 	margin-left: 33%;
+		 }
+	.work_wrap .container:after{
+		display: none;
+	}
+	.work_wrap figure:after{
+		width: 88%;
+	}
+	.work_wrap figure:nth-child(5):after{
+		right: 71%;
+		width: 58%;
+	}
+	.numbers_wrap .container dl{
+		margin-left: -90px;
+	}
+	.numbers_wrap .container {
+    	background: url(../img/graph.png) no-repeat 227px 10px;
+	}
 }
+
+
+
+
+/*-------------end-mobile-devices-------------------*/
